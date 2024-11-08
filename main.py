@@ -667,6 +667,13 @@ def main(cfg: DictConfig):
         raise ValueError(f"Mode {cfg.mode} not recognized.")
     tqdm.write("Finished!")
 
-
+import os
 if __name__ == "__main__":
+    
+    os.environ["HF_TOKEN"] = "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"
+    from huggingface_hub import login
+     
+    # Login using your token
+    login(token=os.getenv("HF_TOKEN"))
+    
     main()
