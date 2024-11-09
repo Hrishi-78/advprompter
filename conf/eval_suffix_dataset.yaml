@@ -7,5 +7,5 @@ mode: eval_suffix_dataset
 eval:
   batch_size: 8
   suffix_dataset_pth_dct:
-    suffixes_eval_1: ... # path to csv, should contain columns 'instruct', 'target', 'suffix', 'full_instruct'
-    suffixes_eval_2: ...
+    suffixes_eval_1: "${output_dir}/suffix_dataset/train_0.csv" # path to csv, should contain columns 'instruct', 'target', 'suffix', 'full_instruct'
+    suffixes_eval_2: "${output_dir}/suffix_dataset/validation_0.csv"
