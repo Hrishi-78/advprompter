@@ -6,7 +6,7 @@ defaults:
 verbose: false
 seed: 2023
 reweight_loss: true
-output_dir: "./exp/local/${now:%Y.%m.%d}/${now:%H%M}"
+output_dir: "./exp/local"
 
 data:
   data_dir: "./data"
