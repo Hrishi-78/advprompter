@@ -14,5 +14,4 @@ eval:
   data:
     suffix_dataset_dir: "${output_dir}/suffix_dataset"
     dataset_pth_dct:
-      train: 
       validation: "${data.data_dir}/harmful_behaviors/dataset/sample50.csv"
